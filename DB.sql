@@ -27,11 +27,12 @@ CREATE TABLE Books (
 -- Insert some sample books
 INSERT INTO Books (BookID, BookTitle, PublicationYear, AuthorID)
 VALUES
-    (1, 'Harry Potter and the Sorcerer\s' Stone', 1997, 1),
-    (2, '1984', 1949, 2),
-    (3, 'Murder on the Orient Express', 1934, 3),
-    (4, 'Harry Potter and the Chamber of Secrets', 1998, 1);
--- Retrieve all books and their authors
+    (5, 'Pride and Prejudice', 1813, 4),
+    (6, 'The Adventures of Huckleberry Finn', 1884, 5),
+    (7, 'War and Peace', 1869, 6),
+    (8, 'Sense and Sensibility', 1811, 4),
+    (9, 'The Adventures of Tom Sawyer', 1876, 5);
+    -- Retrieve all books and their authors
 SELECT b.BookTitle, a.AuthorName
 FROM Books b
 JOIN Authors a ON b.AuthorID = a.AuthorID;
