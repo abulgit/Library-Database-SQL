@@ -31,8 +31,7 @@ VALUES
     (2, '1984', 1949, 2),
     (3, 'Murder on the Orient Express', 1934, 3),
     (4, 'Harry Potter and the Chamber of Secrets', 1998, 1);
-
-    -- Retrieve all books and their authors
+-- Retrieve all books and their authors
 SELECT b.BookTitle, a.AuthorName
 FROM Books b
 JOIN Authors a ON b.AuthorID = a.AuthorID;
